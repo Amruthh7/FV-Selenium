@@ -1,0 +1,5 @@
+a=int(input("Enter the first Num :"))
+b=int(input("Enter the second num :"))
+print("The Addition is: ",a+b)
+print("The subraction is",a-b)
+print("The product of two num",a*b)
