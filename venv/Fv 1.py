@@ -1,0 +1,23 @@
+login = driver.find_element_by_xpath("//span[contains(text(), 'Sign in')]")
+login.click()
+time.sleep(2)
+
+username = driver.find_element_by_xpath("/html/body/div[1]/ion-app/ion-split-pane/ion-router-outlet/div[2]/ion-content/div[2]/div/div/div[2]/div/div/div[1]/div/input")
+wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/ion-app/ion-split-pane/ion-router-outlet/div[2]/ion-content/div[2]/div/div/div[2]/div/div/div[1]/div/input')))
+time.sleep(2)
+username.click()
+time.sleep(1)
+
+username.send_keys("al3224@srmist.edu.in")
+password = driver.find_element_by_xpath("/html/body/div[1]/ion-app/ion-split-pane/ion-router-outlet/div[2]/ion-content/div[2]/div/div/div[2]/div/div/div[2]/div/input")
+wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/ion-app/ion-split-pane/ion-router-outlet/div[2]/ion-content/div[2]/div/div/div[2]/div/div/div[2]/div/input')))
+password.click()
+time.sleep(1)
+password.send_keys("!Amruth12345%")
+time.sleep(2)
+
+signin = driver.find_element_by_xpath("/html/body/div[1]/ion-app/ion-split-pane/ion-router-outlet/div[2]/ion-content/div[2]/div/div/div[2]/div/div/div[4]/button")
+wait.until(EC.element_to_be_clickable((By.XPATH,'/html/body/div[1]/ion-app/ion-split-pane/ion-router-outlet/div[2]/ion-content/div[2]/div/div/div[2]/div/div/div[4]/button')))
+time.sleep(2)
+signin.click()
+time.sleep(3)
